@@ -1,0 +1,32 @@
+# Credentials
+.env
+.env.*
+#!.env.example
+*.pem
+*.key
+gcp-sa.json
+immoweb-*.json
+aws_access_keys.json
+
+# Build output and caches
+dist/
+src/.observablehq/
+.cache/
+data-cache/
+.wrangler/
+*.log
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Editors and OS
+.claude/
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

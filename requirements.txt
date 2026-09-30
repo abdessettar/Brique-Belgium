@@ -1,0 +1,7 @@
+# BigQuery auth + REST. Deliberately not google-cloud-bigquery: the loaders only need a
+# signed JWT and paginated jobs.query, and the SDK pulls in a large dependency tree for that.
+requests>=2.31
+cryptography>=42.0
+
+# Parquet shards for the Explorer page.
+pyarrow>=17.0

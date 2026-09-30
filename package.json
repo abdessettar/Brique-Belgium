@@ -1,0 +1,26 @@
+{
+  "name": "belgian-real-estate-market",
+  "version": "1.0.0",
+  "description": "Asking prices for houses and apartments across Belgium, built as a static site with Observable Framework.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "observable preview",
+    "build": "observable build && node scripts/check-dist.js",
+    "deploy": "wrangler pages deploy dist",
+    "clean": "rm -rf src/.observablehq/cache",
+    "check": "node scripts/check-dist.js"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.0"
+  },
+  "devDependencies": {
+    "topojson-client": "^3.1.0",
+    "topojson-server": "^3.0.1",
+    "wrangler": "^3.90.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
